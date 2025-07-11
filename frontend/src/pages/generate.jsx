@@ -396,16 +396,7 @@ function GenerateSheet() {
             {sheets.map(sheet => (
                 <div
                   key={sheet.id}
-                  className="sidebar-answer-item"
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    background: sheet.id === selectedSheetId ? '#e0e0e0' : 'transparent',
-                    cursor: 'pointer',
-                    fontWeight: sheet.id === selectedSheetId ? 'bold' : 'normal',
-                    paddingRight: 8,
-                  }}
+                  className={`sidebar-answer-item${sheet.id === selectedSheetId ? ' active' : ''}`}
                   onClick={() => setSelectedSheetId(sheet.id)}
                 >
                   {editingName && sheet.id === selectedSheetId ? (
@@ -422,12 +413,11 @@ function GenerateSheet() {
                   ) : (
                     <>
                       <span className="sidebar-answer-title">{sheet.name}</span>
-                      <div style={{ display: 'flex', gap: 4 }}>
+                      <div className="sidebar-answer-actions">
                         <button
                           className="sidebar-edit-btn"
                           onClick={e => { e.stopPropagation(); setEditingName(true); }}
                           title="Rename"
-                          style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
                         >
                           <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
                             <path d="M4 13.5V16h2.5l7.06-7.06-2.5-2.5L4 13.5z" stroke="#6b7280" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -452,7 +442,6 @@ function GenerateSheet() {
                             }
                           }}
                           title="Delete"
-                          style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
                         >
                           <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
                             <path d="M6 8l1 8h6l1-8" stroke="#c00" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
