@@ -5,6 +5,8 @@ import styles from '../styles/generate.module.css';
 import AnswerKey from './answer';
 import jsPDF from 'jspdf';
 import 'jspdf-autotable';
+import UploadSheets from './upload';
+import Results from './results';
 
 const NAV_TABS = [
   { key: 'generate', label: 'Generate Sheet' },
@@ -634,10 +636,10 @@ function GenerateSheet() {
             <AnswerKey examData={sheets.find(s => s.id === selectedSheetId)?.form} />
           )}
           {activeTab === 'upload' && (
-            <div className="tab-placeholder">[Placeholder] Upload page removed.</div>
+            <UploadSheets />
           )}
           {activeTab === 'results' && (
-            <div className="tab-placeholder">[Placeholder] View results here.</div>
+            <Results />
           )}
           </div>
         </main>
