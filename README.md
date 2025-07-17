@@ -62,7 +62,7 @@ An automated test paper checking system that processes multiple-choice answer sh
 - Upload completed test papers (JPEG, PNG, or PDF)
 - Click Check All Papers" to process them
 
-###4 View Results
+### 4. View Results
 - Go to the "Results" tab
 - View individual scores and detailed feedback
 - ClickExport to Excel" to download all results
@@ -170,7 +170,7 @@ app.run(host='0.0, port=5000 debug=True)
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
 3. Commit your changes (`git commit -m 'Add amazing feature`)
-4.Push to the branch (`git push origin feature/amazing-feature`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
 ## 📄 License
@@ -186,6 +186,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️ for educators and students**
-
-*Last updated: June 2024*
