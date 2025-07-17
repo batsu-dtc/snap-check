@@ -125,7 +125,7 @@ The exported Excel file includes:
 
 ### Common Issues
 
-1esseract not found**
+1. **Tesseract not found**
    ```bash
    # Install Tesseract OCR
    # Windows: Download from https://github.com/UB-Mannheim/tesseract/wiki
