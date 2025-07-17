@@ -156,9 +156,9 @@ app.run(host='0.0, port=5000 debug=True)
 
 ## 🔮 Future Enhancements
 
-- i-page PDF support
+- [ ] Multiple-page PDF support
 - [ ] User authentication and accounts
--torage integration
+- [ ] Storage integration
 - [ ] Advanced analytics and charts
 - [ ] Batch processing improvements
 - [ ] Mobile-responsive design
