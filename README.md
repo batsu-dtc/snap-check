@@ -28,13 +28,15 @@ An automated test paper checking system that processes multiple-choice answer sh
    cd TestChecker
    ```
 
-2 **Setup Backend**
+2. **Setup Backend**
    ```bash
    cd backend
    pip install -r requirements.txt
    python app.py
    ```
    The backend will start on `http://localhost:5000`
+
+   
 3. **Setup Frontend** (in a new terminal)
    ```bash
    cd frontend
