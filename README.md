@@ -16,7 +16,7 @@ An automated test paper checking system that processes multiple-choice answer sh
 
 ### Prerequisites
 
-- **Python38 with pip
+- **Python38** with pip
 - **Node.js 16+** with npm
 - **Tesseract OCR** (for text recognition)
 
